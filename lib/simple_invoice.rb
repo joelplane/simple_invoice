@@ -1,4 +1,5 @@
 module SimpleInvoice
+  autoload :VERSION, 'simple_invoice/version'
   autoload :Invoice, 'simple_invoice/invoice'
   autoload :InvoiceData, 'simple_invoice/invoice_data'
   autoload :LineItems, 'simple_invoice/line_items'
