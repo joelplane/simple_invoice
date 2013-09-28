@@ -29,7 +29,7 @@ module SimpleInvoice
 
     # @return [Fixnum]
     def due_days
-      due_date - issue_date
+      (due_date - issue_date).to_i
     end
 
     private

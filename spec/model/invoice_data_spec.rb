@@ -37,6 +37,7 @@ module SimpleInvoice
 
     describe "#due_days" do
       it "should be the difference between the due date and issue date" do
+        subject.due_days.should be_a Fixnum
         subject.due_days.should == 7
       end
     end
