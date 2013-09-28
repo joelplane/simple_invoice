@@ -8,4 +8,5 @@ module SimpleInvoice
   autoload :Subscription, 'simple_invoice/subscription'
   autoload :Contact, 'simple_invoice/contact'
   autoload :Services, 'simple_invoice/services'
+  autoload :Config, 'simple_invoice/config'
 end
