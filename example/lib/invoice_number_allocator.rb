@@ -6,9 +6,9 @@ module ExampleApplication
     # invoice object passed in (eg. the invoice number might simply be sequence,
     # or it might be based on the issue date - invoice.issue_date() )
     def self.call invoice
-      # A very bad way to allocate an invoice number,
-      # but it's just a silly example:
-      Time.now.to_i
+      # allocate the same number every time - obviously not an appropriate
+      # real-world implementation :)
+      123
     end
 
   end

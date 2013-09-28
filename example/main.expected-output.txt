@@ -1,0 +1,13 @@
+To:             John Smith
+Invoice number: 123
+Issue Date:     2013-10-01
+Due Date:       2013-10-08
+
+Description        Price      Qty.   Total
+--------------------------------------------
+Brown paper bag    $  0.15     1     $  0.15
+Pliers             $  9.95     2     $ 19.90
+--------------------------------------------
+Total                                $ 20.05
+
+Due in 7 days
