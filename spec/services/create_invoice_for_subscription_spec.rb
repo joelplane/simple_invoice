@@ -16,7 +16,11 @@ module SimpleInvoice
                              :due_days => 7
     end
     let(:issue_date) { Date.parse('2013-10-01') }
-    subject { Services::CreateInvoiceForSubscription.new(subscription, issue_date) }
+    subject do
+      Services::CreateInvoiceForSubscription.new(subscription, issue_date).tap do |inst|
+        inst.stub(:allocate_invoice_number => nil)
+      end
+    end
 
     describe "#create_invoice" do
       let(:invoice) { subject.create_invoice }

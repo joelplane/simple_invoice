@@ -34,6 +34,7 @@ module SimpleInvoice
             invoice.add_line_item template_line_item.dup
           end
           invoice.set_dates invoice_data.issue_date, invoice_data.due_date
+          allocate_invoice_number invoice
         end
       end
 
@@ -41,6 +42,10 @@ module SimpleInvoice
       # @return [SimpleInvoice::InvoiceData]
       def invoice_data
         @invoice_data ||= InvoiceData.new nil, @issue_date, @subscription.due_days
+      end
+
+      def allocate_invoice_number invoice
+        AllocateInvoiceNumber.call invoice
       end
 
     end
