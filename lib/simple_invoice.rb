@@ -9,4 +9,6 @@ module SimpleInvoice
   autoload :Contact, 'simple_invoice/contact'
   autoload :Services, 'simple_invoice/services'
   autoload :Config, 'simple_invoice/config'
+  autoload :BillingPeriodType, 'simple_invoice/billing_period_type'
+  autoload :BillingPeriod, 'simple_invoice/billing_period'
 end
