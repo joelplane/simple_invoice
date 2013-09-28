@@ -1,4 +1,4 @@
-# bundle exec ruby main.rb
+# bundle exec ruby create_one_off_invoice.rb
 
 require 'simple_invoice'
 require_relative 'lib/invoice_plain_text_formatter'

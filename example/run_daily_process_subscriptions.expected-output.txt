@@ -1,0 +1,14 @@
+Processed 2 subscriptions and generated 1 invoices
+
+To:             John Smith
+Invoice number: 123
+Issue Date:     2013-01-02
+Due Date:       2013-01-09
+
+Description            Price      Qty.   Total
+------------------------------------------------
+Monthly lawn mowing    $ 60.00     1     $ 60.00
+------------------------------------------------
+Total                                    $ 60.00
+
+Due in 7 days
