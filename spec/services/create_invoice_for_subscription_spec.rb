@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module SimpleInvoice
-  describe CreateInvoiceForSubscription do
+  describe Services::CreateInvoiceForSubscription do
 
     let(:line_item_1) { LineItem.new "line item 1", 49_95, 1 }
     let(:line_item_2) { LineItem.new "line item 2", 49_95, 2 }
@@ -16,7 +16,7 @@ module SimpleInvoice
                              :due_days => 7
     end
     let(:issue_date) { Date.parse('2013-10-01') }
-    subject { CreateInvoiceForSubscription.new(subscription, issue_date) }
+    subject { Services::CreateInvoiceForSubscription.new(subscription, issue_date) }
 
     describe "#create_invoice" do
       let(:invoice) { subject.create_invoice }

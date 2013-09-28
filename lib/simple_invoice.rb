@@ -6,5 +6,5 @@ module SimpleInvoice
   autoload :InvoiceTemplate, 'simple_invoice/invoice_template'
   autoload :Subscription, 'simple_invoice/subscription'
   autoload :Contact, 'simple_invoice/contact'
-  autoload :CreateInvoiceForSubscription, 'simple_invoice/create_invoice_for_subscription'
+  autoload :Services, 'simple_invoice/services'
 end
