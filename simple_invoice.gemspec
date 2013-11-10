@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = SimpleInvoice::VERSION
   s.authors     = ["Joel Plane"]
   s.email       = ["joel.plane@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/joelplane/simple_invoice"
   s.summary     = %q{simple invoice library}
   s.description = %q{Very simple invoice library with minimal dependencies}
 
