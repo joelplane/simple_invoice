@@ -3,7 +3,7 @@ module SimpleInvoice
 
     extend Forwardable
 
-    attr_accessor :contact
+    attr_accessor :contact, :void
     attr_reader :line_items
     def_delegator :@line_items, :push, :add_line_item
     def_delegators :@data, :invoice_number, :invoice_number=, :issue_date,
@@ -15,6 +15,7 @@ module SimpleInvoice
     def initialize invoice_number=nil, issue_date=nil, due_date_or_due_days=nil
       @line_items = LineItems.new
       @data = InvoiceData.new invoice_number=nil, issue_date=nil, due_date_or_due_days=nil
+      @void = false
     end
 
   end

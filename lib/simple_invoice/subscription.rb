@@ -1,7 +1,15 @@
 module SimpleInvoice
   class Subscription
 
-    attr_accessor :contact, :invoice_template, :due_days, :start_date, :billing_period_type
+    attr_accessor :contact, :invoice_template, :due_days, :start_date, :billing_period_type, :cancelled
+
+    def cancel!
+      @cancelled = true
+    end
+
+    def cancelled?
+      !!@cancelled
+    end
 
     # @return [Enumerator]
     def billing_periods
